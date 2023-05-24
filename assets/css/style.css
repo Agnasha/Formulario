@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #299bcf;
+    background: #b603030e;
 }
 
 .container {
@@ -32,7 +32,6 @@ body {
     background-color: #f1f0ef;
     border-radius: 100%;
     padding: 1rem;
-    animation: go-back 1s;
     animation: go-back 1s;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
 }
@@ -57,7 +56,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #ebbb94;
-    border-radius: 10%;
+    border-radius: 5%;
     padding: 3rem;
     animation: go-back 1s;
     box-shadow: 5px 5px 10px 15px rgba(0, 0, 0, 0.212);
@@ -80,9 +79,13 @@ body {
     padding: 0.4rem 1rem;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%;
+    height: 100%;
 }
 
+
 .login-button button:hover {
+    
     background-color: #F98826;
 }
 
@@ -148,7 +151,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 0.62rem;
-    padding: 0 .5rem;
+    padding: 0 .195rem;
 }
 
 .gender-input {
