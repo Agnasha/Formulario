@@ -3,7 +3,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+
+   
 }
 
 body {
@@ -12,17 +13,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #b603030e;
+    background: #ff00000e;
 }
 
 .container {
-    width: 80%;
-    height: 80vh;
-    padding: 3rem;
+    width: 90%;
+    height: 90vh;
+    padding: 1rem;
     display: flex;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
     background-color: #F98826;
 }
+
+
 
 .form-image {
     width: 50%;
@@ -32,40 +35,41 @@ body {
     background-color: #f1f0ef;
     border-radius: 100%;
     padding: 1rem;
-    animation: go-back 1s;
+    
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
 }
 
-@keyframes go-back {
-    from {
-      transform: translateY(100px);
-    }
-    to {
-      transform: translateY(0);
-    }
-  } 
 
 .form-image img {
     width: 70rem;
 }
 
 .form {
-    width: 50%;
+    width: 100%;
+    height: 100%;
+    margin-left: 6rem;
     display: flex;
-    flex-direction: column;
+   
     justify-content: center;
-    align-items: center;
-    background-color: #ebbb94;
+    background-color: #f0c48a;
     border-radius: 5%;
-    padding: 3rem;
-    animation: go-back 1s;
-    box-shadow: 5px 5px 10px 15px rgba(0, 0, 0, 0.212);
+    padding: 5rem;
+    animation: go-back1 2s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
 }
+@keyframes go-back1 {
+    from {
+      transform: translateX(300px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  } 
 
 .form-header {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between ;
 }
 
 .login-button {
@@ -73,23 +77,25 @@ body {
     align-items: center;
 }
 
-.login-button button {
+.limpar-button button {
     border: none;
     background-color: #F98826;
-    padding: 0.4rem 1rem;
+    align-items:center;
+    padding:  1rem;
+    margin-left: 2rem;
     border-radius: 5px;
     cursor: pointer;
-    width: 100%;
+    width: 70%;
     height: 100%;
 }
 
 
-.login-button button:hover {
+.limpar-button button:hover {
     
     background-color: #F98826;
 }
 
-.login-button button a {
+.limpar-button button a {
     text-decoration: none;
     font-weight: 500;
     color: #fff;
@@ -98,7 +104,7 @@ body {
 .form-header h1::after {
     content: '';
     display: block;
-    width: 5rem;
+    width: 8rem;
     height: 0.3rem;
     background-color: #F98826;
     margin: 0 auto;
@@ -107,16 +113,16 @@ body {
 }
 
 .input-group {
-    display: flex;
+    
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 1rem 0;
+   
 }
 
 .input-box {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1.1rem;
+    
 }
 
 .input-box input {
@@ -138,52 +144,76 @@ body {
 
 .input-box label,
 .gender-title h6 {
-    font-size: 0.75rem;
+    font-size: 0.90rem;
     font-weight: 600;
     color: #000000c0;
 }
 
 .input-box input::placeholder {
-    color: #000000be;
+    color: #00000048;
 }
 
-.gender-group {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0.62rem;
-    padding: 0 .195rem;
-}
 
-.gender-input {
-    display: flex;
-    align-items: center;
-}
-
-.gender-input input {
-    margin-right: 0.35rem;
-}
-
-.gender-input label {
-    font-size: 0.81rem;
-    font-weight: 600;
-    color: #000000c0;
-}
 
 .continue-button button {
     width: 100%;
-    margin-top: 2.5rem;
+    margin-top: 3rem;
     border: none;
     background-color: #F98826;
     padding: 0.62rem;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
 .continue-button button:hover {
-    background-color: #F98826;
+    background-color: #8cd859c2;
 }
 
 .continue-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+
+
+}
+
+.continue-button1 button {
+    width: 100%;
+    margin-top: 1rem;
+    border: none;
+    background-color: #F98826;
+    padding: 0.62rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.continue-button1 button:hover {
+    background-color: #d89d6a;
+}
+
+.continue-button1 button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.continue-button2 button {
+    width: 100%;
+    margin-top:1rem;
+    border: none;
+    background-color: #F98826;
+    padding: 0.62rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.continue-button2 button:hover {
+    background-color: #d89d6a;
+}
+
+.continue-button2 button a {
     text-decoration: none;
     font-size: 0.93rem;
     font-weight: 500;
@@ -195,7 +225,7 @@ body {
         display: none;
     }
     .container {
-        width: 50%;
+        width: 100%;
     }
     .form {
         width: 100%;
@@ -204,10 +234,34 @@ body {
 
 @media screen and (max-width: 1064px) {
     .container {
-        width: 90%;
-        height: auto;
+        width: 100%;
+        height: 100%;
     }
     .input-group {
+        flex-direction: column;
+        z-index: 5;
+        padding-right: 5rem;
+        max-height: 12rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+    .continue-button{
+        flex-direction: column;
+        z-index: 5;
+        padding-right: 5rem;
+        max-height: 10rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+    .continue-button2{
+        flex-direction: column;
+        z-index: 5;
+        padding-right: 5rem;
+        max-height: 5rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+    .continue-button1{
         flex-direction: column;
         z-index: 5;
         padding-right: 5rem;
